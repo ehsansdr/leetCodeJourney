@@ -15,9 +15,9 @@ public class Main {
 
         // this loop will reverse the number and store that in reversed
         while (temp != 0) {
-            int digit = (int) (temp % 10);
-            reversed = reversed * 10 + digit;
-            temp /= 10;
+            int digit = (int) (temp % 10);      // getting left over of x
+            reversed = reversed * 10 + digit;   // add the left over to the variable in right place
+            temp /= 10;                         // removing the left over of x
         }
 
         return (reversed == x);
